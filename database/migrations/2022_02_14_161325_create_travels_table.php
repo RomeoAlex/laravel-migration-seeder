@@ -21,7 +21,6 @@ class CreateTravelsTable extends Migration
             $table->date('departure_at');
             $table->longText('description');
             $table->tinyInteger('available')->default(1);
-            $table->timestamps();
             $table->decimal('price', 8 ,2)->unsigned();
         });
     }
